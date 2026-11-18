@@ -7182,7 +7182,7 @@
                     $persistentStore.write(appUid, "shadow_locket_uid");
                 }
 
-                const purchaseDate = "2024-01-01T00:00:00Z";
+                const purchaseDate = "2009-06-09T00:00:00Z";
                 const expiresDate = "2099-12-31T23:59:59Z";
                 const nowIso = new Date().toISOString();
                 const nowMs = Date.now();
