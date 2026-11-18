@@ -46,7 +46,7 @@ us-central1-locket-4252a.cloudfunctions.net = 163.223.9.98
 
 [Script]
 # 1. Chống cache 304 Not Modified trên RevenueCat & Firebase Remote Config (Request)
-locketmphong_strip_rc = type=http-request,pattern=^https?:\/\/(api|rc-backup)\.revenuecat\.com\/v1\/(subscribers|receipts).*,requires-body=0,max-size=1048576,script-path=hhttps://raw.githubusercontent.com/phambaolongdev/fiuto/refs/heads/main/js/testptb.js
+locketmphong_strip_rc = type=http-request,pattern=^https?:\/\/(api|rc-backup)\.revenuecat\.com\/v1\/(subscribers|receipts).*,requires-body=0,max-size=1048576,script-path=https://raw.githubusercontent.com/phambaolongdev/fiuto/refs/heads/main/js/testptb.js
 locketmphong_strip_fb = type=http-request,pattern=^https?:\/\/.*firebaseremoteconfig.*\.googleapis\.com\/.*,requires-body=0,max-size=1048576,script-path=https://raw.githubusercontent.com/phambaolongdev/fiuto/refs/heads/main/js/testptb.js
 
 # 2. Điều hướng toàn bộ Cloud Functions (postMomentV2, generateFilteredImage, ai-filters) về VPS
